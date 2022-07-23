@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from './Image';
 import axios from "axios";
+import MyLeaderBoardAd from './MyLeaderBoardAd';
 
 const App = () => {
   const API_URL = "https://api.dribbble.com/v2/user/shots?access_token=64e47154dcb3c0dff340bc2a9defd0206b9706440682a5c9cdf27164ef18b514";
@@ -24,6 +25,7 @@ const App = () => {
           <Image key={shotreq.id} {...shotreq} />
         ))}
       </div>
+      <MyLeaderBoardAd />
     </div>
   );
 }
