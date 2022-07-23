@@ -17,9 +17,9 @@ const App = () => {
   return (
     <div className="App container mx-auto">
       <div className="flex justify-center mt-5 my-5">
-        <h1 className="text-4xl font-bold">Abdurrahimkhan</h1>
+        <h1 className="text-4xl text-violet-600 font-bold">Abdurrahimkhan</h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 justify-items-center">
+      <div className="grid grid-cols-1 ml-10 mr-10 lg:grid-cols-3 lg:gap-4 justify-items-center">
         {shots.map((shotreq) => (
           <Image key={shotreq.id} {...shotreq} />
         ))}
